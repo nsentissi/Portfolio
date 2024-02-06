@@ -185,50 +185,60 @@ export const resume = [
 export const skills = [
   {
     id: 1,
-    title: "Html",
-    percentage: "25",
+    title: "HTML",
+    percentage: "85",
   },
 
   {
     id: 2,
-    title: "Javascript",
-    percentage: "89",
-  },
-
-  {
-    id: 3,
-    title: "Css",
+    title: "CSS",
     percentage: "70",
   },
 
   {
+    id: 3,
+    title: "Javascript",
+    percentage: "75",
+  },
+
+  {
     id: 4,
-    title: "Php",
-    percentage: "66",
+    title: "React",
+    percentage: "80",
   },
 
   {
     id: 5,
-    title: "Wordpress",
-    percentage: "95",
+    title: "Node.js",
+    percentage: "85",
   },
 
   {
     id: 6,
-    title: "Jquery",
-    percentage: "50",
+    title: "Express",
+    percentage: "85",
   },
 
   {
     id: 7,
-    title: "Angular",
-    percentage: "65",
+    title: "MongoDB",
+    percentage: "82",
   },
 
   {
     id: 8,
-    title: "React",
-    percentage: "45",
+    title: "WordPress",
+    percentage: "90",
+  },
+  {
+    id: 9,
+    title: "SQL",
+    percentage: "83",
+  },
+  {
+    id: 10,
+    title: "Tailwind",
+    percentage: "72",
   },
 ];
 

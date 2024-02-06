@@ -3,7 +3,8 @@ import Info from "../../components/info";
 import Stats from "../../components/Stats";
 import { FaDownload } from "react-icons/fa";
 import CV from "../../assets/Nawfal-Sentissi-CV.pdf";
-import "./about.css"
+import Skills from "../../components/Skills";
+import "./about.css";
 
 const About = () => {
   return (
@@ -28,9 +29,17 @@ const About = () => {
             </a>
           </div>
           <div className="stats grid">
-            <Stats/>
+            <Stats />
           </div>
         </div>
+      </section>
+
+      <div className="separator"></div>
+
+      <section className="skills">
+        <h3 className="section__subtitle subtitle__center">My Skills</h3>
+
+        <Skills />
       </section>
     </main>
   );
