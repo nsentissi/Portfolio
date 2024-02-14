@@ -3,16 +3,14 @@ import {
   FaUser,
   FaFolderOpen,
   FaEnvelopeOpen,
-  FaBriefcase,
-  FaGraduationCap,
   FaCode,
   FaGithub
 } from "react-icons/fa";
 import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
 
-import Work1 from "./assets/project-1.jpeg";
-import Work2 from "./assets/project-2.jpg";
-import Work3 from "./assets/project-3.jpeg";
+import Work1 from "./assets/project-1.png";
+import Work2 from "./assets/project-2.png";
+import Work3 from "./assets/project-3.png";
 import Work4 from "./assets/project-4.jpeg";
 import Work5 from "./assets/project-5.jpg";
 import Work6 from "./assets/project-6.jpg";
@@ -232,56 +230,40 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: "Website Design",
-    details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Website",
-      },
-      {
-        icon: <FiUser />,
-        title: "Client : ",
-        desc: "Dribble",
-      },
-      {
-        icon: <FaCode />,
-        title: "Language : ",
-        desc: "React JS",
-      },
+    title: "Pokedex",
+    description: "Full-stack Pokemon battle simulator built with the MERN stack. Features dynamic Pokemon filtering, engaging battle mechanics, and a persistent leaderboard to track top trainers.",
+    tech: "React, Node.js, Express, MongoDB, CSS.",
+    links: [
+     
       {
         icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: "www.dribble.com",
+        desc: "https://pokefight-044.netlify.app/",
       },
+      {
+        icon: <FaGithub/>,
+        desc: "https://github.com/nsentissi/Pokefight-.git"
+      
+      }
     ],
   },
 
   {
     id: 3,
     img: Work3,
-    title: "Video Editing",
-    details: [
-      {
-        icon: <FiFileText />,
-        title: "Project : ",
-        desc: "Video",
-      },
-      {
-        icon: <FiUser />,
-        title: "Client : ",
-        desc: "Dribble",
-      },
-      {
-        icon: <FaCode />,
-        title: "Language : ",
-        desc: "Adobe Premium",
-      },
+    title: "E-commerce",
+    description: "Gained essential React skills building a product-focused app. Implemented dynamic data fetching, filtering logic, and component-based structures.",
+    tech: "React CSS.",
+    links: [
+     
       {
         icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: "www.dribble.com",
+        desc: "https://pokefight-044.netlify.app/",
       },
+      {
+        icon: <FaGithub/>,
+        desc: "https://github.com/nsentissi/ecommerce-react.git"
+      
+      }
     ],
   },
 
