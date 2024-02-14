@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Close from "../assets/close.svg";
 
-function PortofolioItem({ img, title, details }) {
+function PortofolioItem({ img, title, links, description, tech }) {
   const [modal, setModal] = useState(false);
 
   const togglemodal = () => {
@@ -19,19 +19,26 @@ function PortofolioItem({ img, title, details }) {
       {modal && (
         <div className="portfolio__modal">
           <div className="portfolio__modal-content">
-            <img src={Close} alt="" className="modal__close" onClick={togglemodal} />
+            <img
+              src={Close}
+              alt=""
+              className="modal__close"
+              onClick={togglemodal}
+            />
 
             <h3 className="modal__title">{title}</h3>
-
+            <p>{description}</p>
+            <p> Built With : {tech}</p>
             <ul className="modal__list grid">
-              {details.map(({ icon, title, desc }, index) => {
+              {links.map(({ icon, desc }, index) => {
                 return (
                   <li className="modal__item" key={index}>
                     <span className="item__icom">{icon}</span>
 
-                    <div>
-                      <span className="item__title">{title}</span>
-                      <span className="item__details">{desc}</span>
+                    <div className="modal__flex">
+                      <a className="item__details" target="_blank" href={desc}>
+                        {desc}
+                      </a>
                     </div>
                   </li>
                 );

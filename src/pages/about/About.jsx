@@ -1,10 +1,23 @@
-import React from "react";
+import React from 'react';
+import { motion } from 'framer-motion';
 import Info from "../../components/info";
 import Stats from "../../components/Stats";
 import { FaDownload } from "react-icons/fa";
 import CV from "../../assets/Nawfal-Sentissi-CV.pdf";
 import Skills from "../../components/Skills";
 import "./about.css";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+
 
 const About = () => {
   return (
@@ -13,13 +26,17 @@ const About = () => {
         <h2 className="section__title">
           About <span>Me</span>
         </h2>
-        <div className="about__container grid">
+        <motion.div className="about__container grid"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="about__info">
             <h3 className="section__subtitle">Personal Infos</h3>
 
-            <ul className="info__list grid">
+            <motion.ul className="info__list grid" variants={containerVariants}>
               <Info />
-            </ul>
+            </motion.ul>
 
             <a href={CV} download="" className="button">
               Download CV
@@ -28,10 +45,10 @@ const About = () => {
               </span>
             </a>
           </div>
-          <div className="stats grid">
+          <motion.div className="stats grid" variants={containerVariants}>
             <Stats />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       <div className="separator"></div>

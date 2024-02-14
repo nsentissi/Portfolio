@@ -130,6 +130,12 @@
             display: none
         }
 
+        .info__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .home__img {
             width: 270px;
             height: 270px;
@@ -166,6 +172,14 @@
         .modal__close {
             top: -9%;
             right: 0%
+        }
+
+        .theme__toggler {
+                top: -30%
+        }
+
+        .show-switcher {
+            top: 10%
         }
 }
 
@@ -204,4 +218,31 @@
         .form__input-group {
             grid-template-columns: 1fr;
         }
+
+        .form__input-group {
+            grid-template-columns: 1fr;
+        }
+
+        .theme__img {
+            width: 25px;
+        }
+
+        .style__switcher-toggler,
+        .theme__toggler {
+            width: 40px;
+            height: 40px;
+        }
+
+        .style__switcher-toggler {
+            top: 15%
+        }
+
+        .theme__toggler {
+            bottom: 15%;
+        }
+
+        .style__switcher-close {
+            top: 5%
+        }
 }
+

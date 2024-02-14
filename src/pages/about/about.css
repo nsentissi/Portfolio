@@ -13,6 +13,8 @@
   margin-bottom: 32px;
 }
 
+
+
 .section__subtitle {
   font-size: var(--h3-font-size);
   font-weight: var(--weight-600);
@@ -31,7 +33,6 @@
 
 .stats__box {
   border: 1px solid var(--border-color);
-  /* padding: 20px 30px 25px; */
   margin: 10px;
   display: flex;
   flex-direction: column;
