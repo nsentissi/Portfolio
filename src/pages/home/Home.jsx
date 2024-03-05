@@ -44,7 +44,7 @@ const Home = () => {
             variants={textAnimation}
             custom={3} 
           >
-            I'm a Web designer & front-end developer focused on crafting clean &
+            I'm a junior front-end developer focused on crafting clean &
             user-friendly experiences, I am passionate about building excellent
             software that improves the lives of those around me.
           </motion.p>
