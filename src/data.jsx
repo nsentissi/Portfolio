@@ -11,7 +11,9 @@ import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
 import Work1 from "./assets/project-1.png";
 import Work2 from "./assets/project-2.png";
 import Work3 from "./assets/project-3.png";
-import Work4 from "./assets/project-4.png"
+import Work4 from "./assets/project-4.png";
+import Work5 from "./assets/project-5.png";
+
 
 
 import Theme1 from "./assets/purple.png";
@@ -228,26 +230,6 @@ export const portfolio = [
 
   {
     id: 2,
-    img: Work2,
-    title: "Pokedex",
-    description: "Full-stack Pokemon battle simulator built with the MERN stack. Features dynamic Pokemon filtering, engaging battle mechanics, and a leaderboard to track top pokemons.",
-    tech: "React, Node.js, Express, MongoDB, CSS.",
-    links: [
-     
-      {
-        icon: <FiExternalLink />,
-        desc: "https://pokefight-044.netlify.app/",
-      },
-      {
-        icon: <FaGithub/>,
-        desc: "https://github.com/nsentissi/Pokefight-.git"
-      
-      }
-    ],
-  },
-
-  {
-    id: 3,
     img: Work3,
     title: "Airbnb-clone",
     description: "Crafted an Airbnb clone with the MERN stack, enabling user authentication, accommodation listings, and bookings. Focused on dynamic interactions, real-time updates, and a seamless, component-driven UI for an intuitive booking experience",
@@ -266,8 +248,50 @@ export const portfolio = [
     ],
   },
 
+  
+  {
+    id: 3,
+    img: Work5,
+    title: "Weather App",
+    description: "Dynamic weather application built with Next.js, providing accurate, real-time forecasts. Features location-based search, detailed current conditions, extended forecasts, and a sleek, responsive user interface.",
+    tech: "Next.js, tailwindCss",
+    links: [
+     
+      {
+        icon: <FiExternalLink />,
+        desc: "https://weather-app-ns.vercel.app/",
+      },
+      {
+        icon: <FaGithub/>,
+        desc: "https://github.com/nsentissi/weather-app-next.js"
+      
+      }
+    ],
+  },
   {
     id: 4,
+    img: Work2,
+    title: "Pokedex",
+    description: "Full-stack Pokemon battle simulator built with the MERN stack. Features dynamic Pokemon filtering, engaging battle mechanics, and a leaderboard to track top pokemons.",
+    tech: "React, Node.js, Express, MongoDB, CSS.",
+    links: [
+     
+      {
+        icon: <FiExternalLink />,
+        desc: "https://pokefight-044.netlify.app/",
+      },
+      {
+        icon: <FaGithub/>,
+        desc: "https://github.com/nsentissi/Pokefight-.git"
+      
+      }
+    ],
+  },
+
+
+
+  {
+    id: 5,
     img: Work4,
     title: "Portfolio",
     description: "Explore my sleek, minimalist portfolio website, featuring a smooth dark mode and style switcher for a personalized browsing experience. It's designed to showcase my web development projects and skills in a clean, user-friendly environment",
@@ -285,6 +309,9 @@ export const portfolio = [
       }
     ],
   },
+
+
+  
 
   
 ];
