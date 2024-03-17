@@ -1,16 +1,18 @@
 .home {
   grid-template-columns: 4.32fr 7.68fr;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
   height: 100vh;
 }
 
 .home__img {
-  height: 70%;
+  height: 75%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 15%;
   box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.9);
   z-index: 1;
+  margin-left: 2rem;
+  
 
 }
 

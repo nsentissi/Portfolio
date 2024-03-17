@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Info from "../../components/Info"
 import Stats from "../../components/Stats";
 import { FaDownload } from "react-icons/fa";
-import CV from "../../assets/Nawfal-Sentissi-CV.pdf";
+import CV from "../../assets/CV-Nawfal-Sentissi.pdf";
 import Skills from "../../components/Skills";
 import "./about.css";
 
