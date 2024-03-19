@@ -7,13 +7,35 @@ import {
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./contact.css";
 
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const { from_name, from_email, subject, message } = e.target.elements;
+
+    if (!from_name.value.trim()) {
+      toast.error("Please enter your name");
+      return;
+    }
+
+    if (!from_email.value.trim()) {
+      toast.error("Please enter your email");
+      return;
+    }
+
+    if (!subject.value.trim()) {
+      toast.error("Please enter your subject");
+      return;
+    }
+
+    if (!message.value.trim()) {
+      toast.error("Please enter your message");
+      return;
+    }
 
     emailjs
       .sendForm(
